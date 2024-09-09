@@ -19,10 +19,7 @@ export const ProductHero: React.FC<{
         {!metaImage && <div className={classes.placeholder}>No image</div>}
         {metaImage && typeof metaImage !== 'string' && (
           <Media imgClassName={classes.image} resource={metaImage} fill />
-          
         )}
-        
-        
       </div>
 
       <div className={classes.details}>
@@ -53,7 +50,6 @@ export const ProductHero: React.FC<{
           <h6>Description</h6>
           <p>{description}</p>
         </div>
-
         <AddToCartButton product={product} className={classes.addToCartButton} />
       </div>
     </Gutter>
